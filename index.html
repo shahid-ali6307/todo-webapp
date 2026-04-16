@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <b>Day Router</b>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Sync</button>
+        </div>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <nav class="dashboard">
+                 <ul>
+                   <li><a href="#dashboard">Dashboard</a></li>
+                   <li><a href="#tasks">Tasks</a></li>
+                   <li><a href="#notes">Notes</a></li>
+                   <li><a href="#stats">Stats</a></li>
+                 </ul>
+                </nav>
+            <div class="filters">
+                    <h4>Filters</h4>
+                    <ul id="filter-list">
+                      <li data-filter="all">All</li>
+                      <li data-filter="completed">Completed</li>
+                      <li data-filter="pending">Pending</li>
+                    </ul>
+            </div>
+        </aside>
+        <main id="app">
+        </main>
+    </div>
+    <footer>
+        this is footer....
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
