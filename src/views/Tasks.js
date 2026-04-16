@@ -42,9 +42,9 @@ export default function renderTasks(container){
         filteredTask=state.tasks.filter(t=>!t.completed);
     }
 
-    console.log(filteredTask);;
+    console.log(filteredTask);
 
-    renderTaskForm(form);
+    // renderTaskForm(form);
     renderTaskList(content,filteredTask);
     
     }
