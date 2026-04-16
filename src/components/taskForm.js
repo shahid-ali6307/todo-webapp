@@ -8,6 +8,7 @@ export default function renderTaskForm(container){
                 <input type="text" name="title" placeholder="Title" required />
                 <textarea name="description" placeholder="Description"></textarea>
                 <select name="priority" placeholder="Priority">
+                <option value="" selected disabled> Select Priority </option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
