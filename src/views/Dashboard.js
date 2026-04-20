@@ -1,4 +1,3 @@
-import App from "../components/App.js";
 import renderTaskForm from "../components/taskForm.js";
 
 export default function renderDashboard(container){

@@ -69,7 +69,7 @@ export function handleSubmit(e){
           priority: formData.get("priority"),
           dueDate: formData.get("dueDate"),
           tags: formData.get("tags")
-          ? formData.get("tags").split(",").map(t => t.trim())
+          ? formData.get("tags").split(" ").map(t => t.trim())
           : []
   };
 

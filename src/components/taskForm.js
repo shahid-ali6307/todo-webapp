@@ -7,14 +7,14 @@ export default function renderTaskForm(container){
             <form id="task-form">
                 <input type="text" name="title" placeholder="Title" required />
                 <textarea name="description" placeholder="Description"></textarea>
-                <select name="priority" placeholder="Priority">
+                <select name="priority">
                 <option value="" selected disabled> Select Priority </option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
-                </select>
+                </select> 
                 <input type="date" name="dueDate" placeholder="Duedate"/>
-                <input type="text" name="tags" placeholder="Comma Seperated tags" />
+                <input type="text" name="tags" placeholder="Space Seperated tags" />
                 <button type="submit">Add Task</button>
             </form>
           </div>
