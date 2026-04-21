@@ -17,7 +17,7 @@ export default class TaskCard{
            <div class="task-header">
         <h3>${this.task.title}</h3>
         <span class="priority priority-${this.task.priority}">Priority: ${this.task.priority}</span>
-      </div>
+       </div>
 
       <p>Description: ${this.task.description || ""}</p>
 

@@ -30,9 +30,6 @@ export default function renderTasks(container){
 
     const state=store.getState();
     let filteredTask=state.tasks;
-    // console.log(state.tasks);
-
-    console.log("Current Filter:", currentFilter);
 
     if(currentFilter === "completed"){
         filteredTask=state.tasks.filter(t=>t.completed);
@@ -42,9 +39,6 @@ export default function renderTasks(container){
         filteredTask=state.tasks.filter(t=>!t.completed);
     }
 
-    console.log(filteredTask);
-
-    // renderTaskForm(form);
     renderTaskList(content,filteredTask);
     
     }
